@@ -10,11 +10,11 @@ class One {
     required this.gender,
   });
 
-  factory One.fromJson(Map<String, dynamic> json) {
+  factory One.fromJson(Map<String, dynamic> jsonOne) {
     return One(
-      id: json['id'],
-      name: json['name'],
-      gender: json['gender'],
+      id: jsonOne['id'],
+      name: jsonOne['name'],
+      gender: jsonOne['gender'],
     );
   }
 }
